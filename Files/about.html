@@ -4,30 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Sudarshan - Student Web Developer passionate about modern web technologies">
-    <meta name="keywords" content="about, web developer, student, portfolio, skills, education">
-    <meta name="author" content="Sudarshan">
+    <meta name="description"
+        content="About Sudarshan Ingle — Web Developer skilled in HTML, CSS, JavaScript, C, and AI Prompting.">
+    <meta name="keywords" content="about, web developer, portfolio, skills, HTML, CSS, JavaScript, C, AI">
+    <meta name="author" content="Sudarshan Ingle">
 
-    <title>About - Sudarshan's Portfolio</title>
+    <title>About — Sudarshan Ingle</title>
 
     <link rel="icon" href="../Assets/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header Navigation -->
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Sudarshan's Portfolio</h2>
+                <h2>Sudarshan.</h2>
             </div>
             <nav class="nav-menu" id="nav-menu">
-                <a href="https://codeit793.github.io/Sudarshan-Portfolio/" class="nav-link">Home</a>
-                <a href="https://codeit793.github.io/Sudarshan-Portfolio/Files/about.html" class="nav-link2">About</a>
+                <a href="../index.html" class="nav-link2">Home</a>
+                <a href="../index.html#projects" class="nav-link2">Projects</a>
+                <a href="../index.html#contact" class="nav-link2">Contact</a>
+                <a href="about.html" class="nav-link2 active">About</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <span id="theme-icon">⚪</span>
+                </button>
             </nav>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -43,15 +52,16 @@
             <div class="about-content">
                 <div class="about-text">
                     <h1 class="about-title">About Me</h1>
-                    <p class="about-subtitle">Passionate Student Developer</p>
+                    <p class="about-subtitle">Web Developer & Creative Technologist</p>
                     <p class="about-description">
-                        I'm a dedicated student with a deep passion for web development and technology.
-                        My journey began with curiosity about how websites work, and it has evolved into
-                        a commitment to creating meaningful digital experiences.
+                        I'm a web developer with a strong foundation in frontend technologies and a passion for
+                        building clean, modern digital experiences. My journey started with curiosity about how
+                        websites work — and it's grown into a commitment to crafting meaningful, well-engineered
+                        solutions. I combine technical skills with creative thinking to deliver results that stand out.
                     </p>
                 </div>
                 <div class="about-image">
-                    <img src="../Assets/Developer.png" alt="About Sudarshan" loading="lazy">
+                    <img src="../Assets/bg.png" alt="Sudarshan Ingle — Developer" loading="lazy">
                 </div>
             </div>
         </div>
@@ -60,24 +70,26 @@
     <!-- Skills Section -->
     <section class="skills">
         <div class="skills-container">
-            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technical Expertise</p>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="divider"></div>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <img src="../Assets/HTML.png" alt="HTML" loading="lazy">
+                        <img src="../Assets/HTML.png" alt="HTML5" loading="lazy">
                     </div>
                     <h3>HTML5</h3>
-                    <p>Semantic markup and modern web standards</p>
+                    <p>Semantic markup, accessibility, and modern web structure</p>
                     <div class="skill-progress">
                         <div class="progress-bar" data-width="90%"></div>
                     </div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <img src="../Assets/CSS.png" alt="CSS" loading="lazy">
+                        <img src="../Assets/CSS.png" alt="CSS3" loading="lazy">
                     </div>
                     <h3>CSS3</h3>
-                    <p>Responsive design, Flexbox, Grid, and animations</p>
+                    <p>Responsive design, Flexbox, Grid, animations & transitions</p>
                     <div class="skill-progress">
                         <div class="progress-bar" data-width="85%"></div>
                     </div>
@@ -87,19 +99,29 @@
                         <img src="../Assets/JS.png" alt="JavaScript" loading="lazy">
                     </div>
                     <h3>JavaScript</h3>
-                    <p>ES6+ features and modern web development</p>
+                    <p>ES6+ features, DOM manipulation & interactive web applications</p>
                     <div class="skill-progress">
                         <div class="progress-bar" data-width="75%"></div>
                     </div>
                 </div>
-                 <div class="skill-card">
+                <div class="skill-card">
                     <div class="skill-icon">
-                        <img src="../Assets/JS.png" alt="JavaScript" loading="lazy">
+                        <span class="skill-emoji">⚙️</span>
                     </div>
-                    <h3>Python</h3>
-                    <p>I am Learning Python now, will be ready with my practice experiences</p>
+                    <h3>C Programming</h3>
+                    <p>Systems-level programming, algorithms & data structures</p>
                     <div class="skill-progress">
-                        <div class="progress-bar" data-width="50%"></div>
+                        <div class="progress-bar" data-width="45%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <span class="skill-emoji">🤖</span>
+                    </div>
+                    <h3>AI Prompting</h3>
+                    <p>Effective AI collaboration for development, design & problem solving</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="80%"></div>
                     </div>
                 </div>
             </div>
@@ -111,23 +133,24 @@
         <div class="education-container">
             <div class="education-content">
                 <div class="education-text">
+                    <p class="section-subtitle">Background</p>
                     <h2 class="section-title">Education & Goals</h2>
                     <div class="education-item">
-                        <h3>Current Studies</h3>
-                        <p>Pursuing Computer Science with focus on web development technologies</p>
+                        <h3>Computer Science</h3>
+                        <p>Pursuing studies with a focus on web development, programming fundamentals, and software engineering principles.</p>
                     </div>
                     <div class="education-item">
-                        <h3>Learning Path</h3>
-                        <p>Continuously expanding knowledge in modern web frameworks and backend technologies</p>
+                        <h3>Continuous Growth</h3>
+                        <p>Actively expanding into systems programming with C and leveraging AI tools to enhance development workflows and productivity.</p>
                     </div>
                     <div class="education-item">
-                        <h3>Future Goals</h3>
-                        <p>Aspiring to become a full-stack developer and contribute to innovative web solutions</p>
+                        <h3>Career Vision</h3>
+                        <p>Building toward a full-stack development career — combining frontend expertise with backend knowledge to deliver end-to-end solutions.</p>
                     </div>
                 </div>
                 <div class="goals-visual">
                     <div class="goal-circle">
-                        <img src="../Assets/Profile.png" alt="Profile image" loading="lazy">
+                        <img src="../Assets/bg.png" alt="Sudarshan Ingle" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -137,26 +160,53 @@
     <!-- Personal Interests -->
     <section class="interests">
         <div class="interests-container">
-            <h2 class="section-title">Beyond Coding</h2>
+            <p class="section-subtitle">Beyond Code</p>
+            <h2 class="section-title">Interests</h2>
+            <div class="divider"></div>
             <div class="interests-grid">
                 <div class="interest-card">
                     <div class="interest-icon">🎥</div>
                     <h3>Video Editing</h3>
-                    <p>Creating engaging visual content and storytelling through video</p>
+                    <p>Creating engaging visual content with professional editing and storytelling techniques</p>
                 </div>
                 <div class="interest-card">
                     <div class="interest-icon">💡</div>
                     <h3>Tech Innovation</h3>
-                    <p>Staying updated with latest technology trends and innovations</p>
+                    <p>Staying current with emerging technologies, AI tools, and industry trends</p>
                 </div>
                 <div class="interest-card">
                     <div class="interest-icon">🎨</div>
                     <h3>UI/UX Design</h3>
-                    <p>Designing intuitive and beautiful user experiences</p>
+                    <p>Designing intuitive, beautiful interfaces that deliver seamless user experiences</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Sudarshan Ingle</h3>
+                    <p>Web Developer & Creative Technologist</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../index.html#projects">Projects</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Sudarshaningle" target="_blank" rel="noopener noreferrer">📱</a>
+                    <a href="https://linkedin.com/in/sudarshan-ingle-461a1338a" target="_blank" rel="noopener noreferrer">💼</a>
+                    <a href="https://x.com/Ingle8983" target="_blank" rel="noopener noreferrer">🐦</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sudarshan Ingle. Built with passion and clean code.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
