@@ -21,10 +21,10 @@ function initTypedAnimation() {
     try {
         new Typed('#typed-text', {
             strings: [
-                'Frontend Developer.',
-                'Creative Coder.',
-                'AI Prompt Engineer.',
-                'Problem Solver.',
+                'Artificial Intelligence.',
+                'Data Science.',
+                'Agentic AI.',
+                'Python Programmer',
                 'Web Developer.'
             ],
             typeSpeed: 80,
