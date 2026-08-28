@@ -124,31 +124,39 @@ function initNavbarScroll() {
     }, { passive: true });
 }
 
-// ===========================
-// Active Nav Highlight on Scroll
-// ===========================
 function initActiveNavHighlight() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
 
     if (sections.length === 0 || navLinks.length === 0) return;
 
+    let visibleSections = new Map(); // id -> intersectionRatio
+
     const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
             if (entry.isIntersecting) {
-                const id = entry.target.getAttribute('id');
+                visibleSections.set(id, entry.intersectionRatio);
+            } else {
+                visibleSections.delete(id);
+            }
+        });
 
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    const href = link.getAttribute('href');
-                    if (href === '#' + id) {
-                        link.classList.add('active');
-                    }
-                });
+        if (visibleSections.size === 0) return;
+
+        // pick the section with the highest visible ratio
+        const activeId = [...visibleSections.entries()]
+            .sort((a, b) => b[1] - a[1])[0][0];
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            const href = link.getAttribute('href');
+            if (href === '#' + activeId) {
+                link.classList.add('active');
             }
         });
     }, {
-        threshold: 0.3,
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
         rootMargin: '-80px 0px -50% 0px'
     });
 

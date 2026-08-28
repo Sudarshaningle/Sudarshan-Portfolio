@@ -188,6 +188,7 @@ body {
     width: 100%;
     background: var(--bg-secondary);
     border-bottom: 1px solid var(--border-subtle);
+    border-top: 1px solid var(--border-subtle);
     overflow: hidden;
     z-index: 10;
     display: flex;
